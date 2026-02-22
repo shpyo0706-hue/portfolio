@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sh's portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <script src="js/fullpage.js"></script>
+  <script src="js/js.js" defer></script>
+</head>
+<body>
+  <div id="header_wrap">
+    <header>
+      <h1 class="logo">Seunghee's Web Portfolio</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#1" data-menuanchor="home">HOME</a></li>
+          <li><a href="#2" data-menuanchor="aboutme">ABOUT ME</a></li>
+          <li><a href="#3" data-menuanchor="skills">SKILLS</a></li>
+          <li><a href="#4" data-menuanchor="portfolio">PORTFOLIO</a></li>
+          <li><a href="#5" data-menuanchor="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="fullpage">
+    <section class="section">
+        <video class="overlay-video" loop muted="true" playsinline data-autoplay>
+          <source src="video/171946-846113552_medium.mp4" type="video/mp4">
+        </video>
+      <div class="container layer intro">
+        <h1>Seunghee's Web Portfolio</h1>
+        <p class="fi">사용자 경험을 중심으로 문제를 해결하는 UI/UX 디자이너를 목표로 성장하고 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="section about-section">
+      <div class="slide">
+        <div class="container">
+          <h1>ABOUT ME</h1>
+        </div>
+      </div>
+        <div class="slide">
+          <div class="about-text">
+            <p>저는 사용자 경험을 중심으로 디자인합니다.</p>
+            <p>UI/UX 디자인을 배우며 사용자 입장에서 사고하고, 작은 불편함도 놓치지 않으려 노력합니다.</p>
+            <p>기획부터 구현까지의 흐름을 이해하며 직관적인 인터페이스를 만드는 디자이너로 성장하고 있습니다.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="slide">
+        <h1>SKILLS</h1>        
+      </div>
+
+      <div class="slide">
+        <div class="container">
+          <div class="skills-wrapper">
+            <div class="skill-card">
+              <h1>Design Tools</h1>
+              <p>Figma</p>
+            </div>
+          <div class="skill-card">
+            <h1>Web Skills</h1>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <h1>UX Skills</h1>
+            <p>Wireframing</p>
+            <p>Prototyping</p>
+            <p>User-centered Design</p>
+          </div>
+          <div class="skill-card">
+            <h1>Soft Skills</h1>
+            <p>Communication</p>
+            <p>Collaboration</p>
+            <p>Problem Solving</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="slide">
+          <div class="container">
+            <h1>PORTFOLIO</h1>
+          </div>
+        </div>
+
+    <div class="slide">
+      <div class="container">
+        <div class="portfolio-grid">
+          <div class="card">
+            <img src="img/subway.png" alt="Project 1">
+              <div class="card-content">
+                <h3>Clone Web Site</h3>
+                <p>클론 페이지 제작</p>
+                <span class="tech">HTML / CSS / JavaScript</span>
+                <a href="https://shpyo0706-hue.github.io/subway/" class="btn">View Project</a>
+              </div>
+            </div>
+              <div class="card">
+                <img src="img/nike.png" alt="Project 2">
+                  <div class="card-content">
+                    <h3>Responsive Web Site</h3>
+                    <p>반응형 웹사이트 제작 프로젝트</p>
+                    <span class="tech">HTML / CSS / JS</span>
+                    <a href="https://shpyo0706-hue.github.io/NikeResponsive-edit/" class="btn">View Project</a>
+                  </div>
+                </div>
+              <div class="card">
+                <img src="img/lago.png" alt="Project 3">
+                  <div class="card-content">
+                    <h3>Landing Page Design</h3>
+                    <p>랜딩 페이지 제작</p>
+                    <span class="tech">HTML / CSS / JS</span>
+                    <a href="https://shpyo0706-hue.github.io/lago/" class="btn">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    
+    <section class="section contact-section">
+      <div class="slide">
+        <video class="overlay-video" loop muted playsinline autoplay>
+          <source src="video/131766-751014982_small.mp4" type="video/mp4">
+        </video>
+          <div class="container">
+            <h1>CONTACT</h1>
+            <p><i class="fa-solid fa-envelope"></i>E-mail | <a href="mailto:shpyo0706@gmail.com">shpyo0706@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i>phone | 010-1234-5678</p>
+            <p>GitHub | <a href="https://github.com/yourname" target="_blank"> github.com/shpyo0706</a></p>
+          </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

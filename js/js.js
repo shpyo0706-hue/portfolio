@@ -1,0 +1,43 @@
+new fullpage('#fullpage', {
+    //options here
+    autoScrolling:true,
+    scrollHorizontally: true,
+
+    navigation: true,   //페이지버튼 
+    navigationTooltips: ['HOME', 'ABOUT ME', 'SKILLS', 'PORTFOLIO', 'PHOTO GALLERY', 'CONTACT'],
+    navigationPosition:'left',
+
+     slidesNavigation: true,  //슬라이드의 페이지버튼
+     slidesNavPosition: 'bottom', // Default
+     controlArrows:false,   //슬라이더 양옆 화살표
+
+    //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000', 'red'],   각 섹션의 배경 설정
+
+    //scrollBar:true, //스크롤 바가 생김
+    fitToSection:true,
+    fitToSectionDelay:600,
+
+    scrollingSpeed:1000,  // default - 700 
+
+    menu: '.menu',
+    anchors:['home', 'aboutme', 'skills','portfolio', 'photogallery','contact'],  // 각섹션으로 가는 링크
+
+    responsiveWidth: 800,   //너비 800 이하일땐 일반 스크롤바, 페이지버튼 없어짐
+
+    //섹션을 불러오고 나서 스크롤이 끝나면 콜백 실행
+    //(활성화된 구역, 목적지, 스크롤하는 방향(up/down))
+    afterLoad: function(origin, destination, direction, trigger){
+        
+        const aa = destination.item.querySelector('h1')
+        console.log('하하하',aa);     
+        aa.classList.add('animate__animated', 'animate__fadeInDown')
+    }, 
+    onLeave: function(origin, destination, direction, trigger){
+        const bb = origin.item.querySelector('h1')
+        bb.classList.remove('animate__animated', 'animate__fadeInDown') 
+    }  
+
+
+    
+
+});
